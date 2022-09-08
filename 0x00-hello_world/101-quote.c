@@ -5,7 +5,9 @@
 */
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar,
-		2015-10-19\n");
+	int a = 2015;
+	int b = 10;
+	int c = 19
+	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, %i-%i-%i\n", a,b,c);
 	return (1);
 }
