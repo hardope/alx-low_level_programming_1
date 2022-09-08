@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -o main.o $CFILE
+gcc -c $CFILE
