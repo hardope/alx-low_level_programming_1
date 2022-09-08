@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -o | $CFILE tr 'c' 'o'
+gcc $CFILE -o | "$CFILE tr 'c' 'o'"
