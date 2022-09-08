@@ -2,7 +2,9 @@
 /* standard input output */
 int main(void)
 {
-	// main function
+	/** main
+	 * function
+	*/
 	puts("\"Programming is like building a multilingual puzzle\n");
 	return (0);
 }
