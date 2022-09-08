@@ -1,0 +1,2 @@
+#!/bi/bash
+gcc $CFILE -o | $CFILE tr 'c' 'o'
