@@ -24,7 +24,7 @@ int main(void)
 		b = (char)(a);
 		putchar(b);
 		a++;
-		if (a == 122)
+		if (a == 123)
 			a = 65;
 		if (a == 91)
 			break;
