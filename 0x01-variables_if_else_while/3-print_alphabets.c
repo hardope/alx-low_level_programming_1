@@ -13,7 +13,7 @@ int main(void)
 
 	int a = 65;
 
-	while (a < 98)
+	while (a < 91)
 	{
 		b = (char)(a);
 		putchar(b);
