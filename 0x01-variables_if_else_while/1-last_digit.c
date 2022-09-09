@@ -17,7 +17,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	m = n;
-	while (n >= 10)
+	while (m >= 10)
 	{
 		m = n / 10;
 	}
