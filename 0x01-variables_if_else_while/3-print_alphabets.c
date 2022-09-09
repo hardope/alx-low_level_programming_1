@@ -24,9 +24,9 @@ int main(void)
 		b = (char)(a);
 		putchar(b);
 		a++;
-		if a == 122
+		if (a == 122)
 			a = 65
-		if a == 90
+		if (a == 90)
 			break;
 	}
 	putchar('\n');
