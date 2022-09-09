@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -22,3 +23,33 @@ int main(void)
 
 	return (0);
 }
+=======
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+#include<stdio.h>
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
+/**
+* main - This is a description
+* Return: 0 if successfull. 1 otherwise
+*/
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+
+	if (n == 0)
+		printf("%i is zero\n", n);
+	if (n < 0)
+		printf("%i is negative\n", n);
+	if (n > 0)
+		printf("%i is positive\n", n);
+
+	return (0);
+}
+>>>>>>> a926abd38f4a7a41784b9db34137ab6dda008465
