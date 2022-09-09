@@ -14,7 +14,7 @@ int main(void)
 	/* your code goes there */
 	char *string;
 	int last_digit;
-	sprintf(text, "%d", n);
+	sprintf(string, "%d", n);
 	last_digit = int(string[strlen(string -1)])
 
 	if (last_digit == 0)
