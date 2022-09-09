@@ -15,10 +15,10 @@ int main(void)
 
 	last = n % 10;
 	if (last == 0)
-		print(f"%i is zero\n", n);
+		print("%i is zero\n", n);
 	if (last > 0)
-		printf("%i is positive", n);
+		printf("%i is positive\n", n);
 	if (last < 0)
-		printf("%i is negative", n);
+		printf("%i is negative\n", n);
 	return (0);
 }
