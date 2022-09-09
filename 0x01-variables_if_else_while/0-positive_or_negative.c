@@ -5,7 +5,7 @@
 /* Initial short description */
 /* betty style doc for function main goes there */
 /**
-* main: This is description for the main function
+* main - This is a description
 * Return: 0 if successful. 1 otherwise
 */
 int main(void)
