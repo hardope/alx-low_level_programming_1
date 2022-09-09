@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-
+/* more headers goes there */
+/* Initial short description */
+/* betty style doc for function main goes there */
 /**
 * main: This is the main function
 * Return: 0 if successful. 1 otherwise
