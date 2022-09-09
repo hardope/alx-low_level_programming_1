@@ -9,10 +9,9 @@ int main(void)
 {
 	int n;
 	char *string;
-	char last_digit;
+	int last_digit;
 	sprintf(string, "%d", n);
-	last_digit = string[strlen(string -1)];
-	int digit = int(last_digit)
+	last_digit = (int)(string[strlen(string -1)]);
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
