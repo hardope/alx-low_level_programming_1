@@ -16,7 +16,8 @@ int main(void)
 	{
 		b = a + '0';
 		putchar(b);
+		a++;
+	}
 	putchar('\n');
 	return (0);
-	}
 }
