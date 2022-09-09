@@ -10,12 +10,12 @@ int main(void)
 	int n;
 	char *string;
 	int last_digit;
-	sprintf(string, "%d", n);
-	last_digit = (int)(string[strlen(string -1)]);
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
+	sprintf(string, "%d", n);
+	last_digit = (int)(string[strlen(string -1)]);
 
 	if (last_digit == 0)
 		printf("%i is zero\n", n);
