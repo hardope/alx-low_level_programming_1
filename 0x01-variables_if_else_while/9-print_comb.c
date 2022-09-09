@@ -9,11 +9,13 @@
 */
 int main(void)
 {
-	int a = 0;
+	int a = 48;
 
-	while (a < 10)
+	while (a < 58)
 	{
-		printf("%i", a);
+		putchar(a);
+		if a != 57
+			putchar(",")
 		a++;
 	}
 	putchar('\n');
