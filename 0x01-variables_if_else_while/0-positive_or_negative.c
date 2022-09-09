@@ -8,7 +8,7 @@
 int main(void)
 {
 	int n;
-	char *string;
+	char *string = "";
 	int last_digit;
 
 	srand(time(0));
