@@ -15,7 +15,7 @@ int main(void)
 	
 	while (a < 122)
 	{
-		b = char(a);
+		b = (char)(a);
 		putchar(b);
 		a++;
 	}
