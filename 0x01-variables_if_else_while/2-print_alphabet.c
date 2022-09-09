@@ -9,9 +9,13 @@
 */
 int main(void)
 {
-	int a;
-	for (a = 97; a < 122, a++)
-		putchar("%c", a);
+	char b
+
+	int a = 97;
+	while (a < 122)
+	{
+		b = a + '0'
+		putchar(b);
 	putchar("/n");
 	return (0);
 }
