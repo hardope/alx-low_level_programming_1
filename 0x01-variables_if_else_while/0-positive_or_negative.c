@@ -12,12 +12,13 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	char *string;
+	int last_digit;
 	itoa(n,string,10);
-	int last_digit = int(string[strlen(string -1)])
+	last_digit = int(string[strlen(string -1)])
 
-	if last_digit == 0
+	if (last_digit == 0)
 		printf("%i is zero\n", n);
-	else if last_digit < 0
+	else if (last_digit < 0)
 		printf("%i is negative\n", n);
 	else
 		printf("%i is positive\n", n);
