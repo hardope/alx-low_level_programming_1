@@ -17,7 +17,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	m = n
+	m = n;
 	while (n >= 10)
 	{
 		m = n / 10;
