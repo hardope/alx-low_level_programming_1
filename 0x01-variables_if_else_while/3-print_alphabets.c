@@ -13,8 +13,11 @@ int main(void)
 
 	int a = 65;
 
-	while (a < 91)
+	while (a < 122)
 	{
+		if (a > 65 && a < 97)
+			continue;
+
 		b = (char)(a);
 		putchar(b);
 		a++;
