@@ -12,9 +12,10 @@ int main(void)
 	char b;
 
 	int a = 97;
+	
 	while (a < 122)
 	{
-		b = a + '0';
+		b = char(a);
 		putchar(b);
 		a++;
 	}
