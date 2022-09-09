@@ -15,7 +15,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	sprintf(string, "%d", n);
-	last_digit = (int)(string[strlen(string -1)]);
+	last_digit = (int)(string[strlen(string -2)]);
 
 	if (last_digit == 0)
 		printf("%i is zero\n", n);
