@@ -22,11 +22,11 @@ int main(void)
 	{
 		m = n / 10;
 	}
-	if (last == 0)
+	if (m == 0)
 		printf("Last digit of %i is 0 and is 0\n", n);
-	if (last > 5)
+	if (m > 5)
 		printf("Last digit of %i is %i and is greater than 5\n", n, m);
-	if (last < 6 && last != 0)
+	if (m < 6 && last != 0)
 		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, m);
 	return (0);
 }
