@@ -9,13 +9,11 @@
 */
 int main(void)
 {
-	char b;
-
 	int a = 0;
 
 	while (a < 10)
 	{
-		printf('%i', a);
+		printf("%i", a);
 	}
 	putchar('\n');
 	return (0);
