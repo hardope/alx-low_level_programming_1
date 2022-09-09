@@ -11,9 +11,9 @@ int main(void)
 {
 	char b;
 
-	int a = 123;
+	int a = 122;
 
-	while (a > 95)
+	while (a > 96)
 	{
 		b = (char)(a);
 		putchar(b);
