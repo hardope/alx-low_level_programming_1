@@ -25,8 +25,8 @@ int main(void)
 		putchar(b);
 		a++;
 		if (a == 122)
-			a = 66;
-		if (a == 90)
+			a = 65;
+		if (a == 91)
 			break;
 	}
 	putchar('\n');
