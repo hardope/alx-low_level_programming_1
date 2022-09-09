@@ -5,6 +5,10 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+* main - This is a description
+* Return: 0 if successfull. 1 otherwise
+*/
 int main(void)
 {
 	int n;
