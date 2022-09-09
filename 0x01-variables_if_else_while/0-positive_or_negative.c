@@ -12,7 +12,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	char *string;
-	itoa(number,string,10);
+	itoa(n,string,10);
 	int last_digit = int(string[strlen(string -1)])
 
 	if last_digit == 0
