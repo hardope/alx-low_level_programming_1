@@ -11,23 +11,11 @@ int main(void)
 {
 	char b;
 
-	int a = 97;
+	int a = 0;
 
-	while (a < 123)
+	while (a < 10)
 	{
-		if (a > 90 && a < 97)
-		{
-			a++;
-			continue;
-		}
-
-		b = (char)(a);
-		putchar(b);
-		a++;
-		if (a == 123)
-			a = 65;
-		if (a == 91)
-			break;
+		printf('%i', a);
 	}
 	putchar('\n');
 	return (0);
