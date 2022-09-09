@@ -11,13 +11,13 @@ int main(void)
 {
 	char b;
 
-	int a = 97;
+	int a = 123;
 
-	while (a < 123)
+	while (a > 95)
 	{
 		b = (char)(a);
 		putchar(b);
-		a++;
+		a--;
 	}
 	putchar('\n');
 	return (0);
