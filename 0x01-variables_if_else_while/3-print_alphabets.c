@@ -11,9 +11,9 @@ int main(void)
 {
 	char b;
 
-	int a = 122;
+	int a = 97;
 
-	while (a > 65)
+	while (a < 123)
 	{
 		if (a > 90 && a < 97)
 		{
@@ -24,6 +24,10 @@ int main(void)
 		b = (char)(a);
 		putchar(b);
 		a++;
+		if a == 122
+			a = 65
+		if a == 90
+			break;
 	}
 	putchar('\n');
 	return (0);
