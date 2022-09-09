@@ -10,12 +10,13 @@
 int main(void)
 {
 	int a = 48;
+	int b = 44;
 
 	while (a < 58)
 	{
 		putchar(a);
 		if (a != 57)
-			putchar(",");
+			putchar(b);
 		a++;
 	}
 	putchar('\n');
