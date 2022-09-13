@@ -35,4 +35,5 @@ int _isalpha(int c);
  * _putchar - the "_" before the putchar is used when declaring a fuction
  * for alphabets
  */
+int print_sign(int n);
 #endif
