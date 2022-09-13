@@ -14,7 +14,7 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			int c = i * j;
-			int d = (i + 1) * j
+			int d = (i + 1) * j;
 
 			printf("%i", c);
 			if (j != 9)
