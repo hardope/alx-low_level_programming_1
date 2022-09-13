@@ -12,9 +12,9 @@ int print_last_digit(int a)
 	if (a < 0)
 		a = (-1) * a;
 	if ((a + '0')  == ',')
-		a = 52;
+		a = 52 + '0';
 	if ((a + '0') == '(')
-		a = 56;
+		a = 56 + '0';
 
 	_putchar(last + '0');
 	return (last);
