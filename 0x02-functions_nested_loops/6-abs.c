@@ -4,9 +4,9 @@
 * @int: Value of parameter
 * Return: Values
 */
-int _abs(int)
+int _abs(int a)
 {
-	if (n < 0)
-		int = int * (-1)
-	return (int)
+	if (a < 0)
+		a = a * (-1)
+	return (a)
 }
