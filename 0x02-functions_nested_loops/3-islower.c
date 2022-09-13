@@ -2,7 +2,7 @@
 /**
 *  _islower - Print
 * Return: 0 Success
-* c: Value
+* c - Value
 */
 int _islower(int c)
 {
