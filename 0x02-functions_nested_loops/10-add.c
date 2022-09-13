@@ -1,12 +1,11 @@
 #include "main.h"
 /**
-*  _abs - Print
+* add - Print
 * @a: Value of parameter
+* @b: Value of parameter
 * Return: Values
 */
-int _abs(int a)
+int add(int a, int b);
 {
-	if (a < 0)
-		a = a * (-1);
-	return (a);
+	return (a + b);
 }
