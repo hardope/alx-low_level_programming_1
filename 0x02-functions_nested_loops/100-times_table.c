@@ -1,24 +1,31 @@
 #include "main.h"
+#include<stdio.h>
 /**
-*  print_sign - Print
-* @n: Value of parameter
+*  times_table - Print
 * Return: Values
 */
-int print_sign(int n)
+void times_table(void)
 {
-	if (n < 0)
+	int j;
+	int i;
+
+	for (i = 0; i < 10; i++)
 	{
-		_putchar('-');
-		return (-1);
-	}
-	else if (n == 0)
-	{
-		_putchar('0');
-		return (0);
-	}
-	else
-	{
-		_putchar('+');
-		return (1);
+		for (j = 0; j < 10; j++)
+		{
+			int c = i * j;
+			int d = i * (j + 1);
+
+			printf("%i", c);
+			if (j != 9)
+			{
+				printf(",");
+				if ((c >= 0 && c <= 9) && (d >= 0 && d <= 9))
+					printf("  ");
+				else
+					printf(" ");
+			}
+		}
+		printf("\n");
 	}
 }
