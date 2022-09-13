@@ -20,7 +20,7 @@ void times_table(void)
 			if (j != 9)
 			{
 				printf(",");
-				if (c <= 9 && d !> 9)
+				if (c <= 9 && d < 10)
 					printf("  ");
 				else
 					printf(" ");
