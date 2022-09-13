@@ -2,6 +2,7 @@
 /**
 *  _isalpha - Print
 * @c: Description for c
+* Return: 0. Success
 */
 int _isalpha(int c)
 {
