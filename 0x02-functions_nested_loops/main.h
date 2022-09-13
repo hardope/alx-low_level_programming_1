@@ -36,4 +36,6 @@ int _isalpha(int c);
  * for alphabets
  */
 int print_sign(int n);
+
+int _abs(int);
 #endif
