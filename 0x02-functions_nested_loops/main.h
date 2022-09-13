@@ -3,7 +3,9 @@
  */
 void print_alphabet(void)
 {
-	for (int i = 65; i < 123; i++)
-		putchar(i);
-	putchar('\n')
+	int i;
+	
+	for (i = 65; i < 123; i++)
+		_putchar(i);
+	_putchar('\n');
 }
