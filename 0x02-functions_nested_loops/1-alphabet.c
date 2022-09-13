@@ -1,14 +1,18 @@
 #include "main.h"
 /**
-* main - Print
-* Return: 0. Successful.
-*/
-int main(void)
+ * print_alphabet - its a function in the main header that allows us to print
+ *
+ * Return: Always returns 0
+ */
+
+void print_alphabet(void)
 {
-	int a;
-	
-	for (a = 65; a < 96; a++)
+	char a = 'a';
+	while (a <= 'z')
+	{
 		_putchar(a);
+		a++;
+	}
 	_putchar('\n');
-	return (0);
+
 }
