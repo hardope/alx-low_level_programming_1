@@ -1,6 +1,8 @@
 #include "main.h"
 /**
 *  _islower - Print
+* Return: 0 Success
+* c: Value
 */
 int _islower(int c)
 {
