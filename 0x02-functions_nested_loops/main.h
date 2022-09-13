@@ -23,4 +23,10 @@ void print_alphabet_x10(void);
  * _putchar - the "_" before the putchar is used when declaring a fuction
  * for alphabets
  */
+int _islower(int c);
+ /**
+ * void - used to return nothing
+ * _putchar - the "_" before the putchar is used when declaring a fuction
+ * for alphabets
+ */
 #endif
