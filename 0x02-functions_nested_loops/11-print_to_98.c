@@ -4,9 +4,11 @@
 * @a: Value of parameter
 * Return: Values
 */
-int _abs(int a)
+void print_to_98(int n)
 {
-	if (a < 0)
-		a = a * (-1);
-	return (a);
+	for (i = n; i < 98, i++)
+	{
+		printf('%i', i);
+	}
+	printf('\n');
 }
