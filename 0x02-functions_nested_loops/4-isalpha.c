@@ -23,5 +23,5 @@ int main(void)
 */
 int _islower(int c)
 {
-	return (islower(c));
+	return (isalpha(c));
 }
