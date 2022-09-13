@@ -9,5 +9,5 @@ int main(void)
 	
 	for (a = 65; a < 96; a++)
 		_putchar(a);
-	_putchar(/n);
+	_putchar(\n);
 }
