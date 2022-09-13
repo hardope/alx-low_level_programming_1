@@ -4,20 +4,20 @@
 *  times_table - Print
 * Return: Values
 */
-void times_table(void)
+void print_times_table(int n)
 {
 	int j;
 	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < n; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 0; j < n; j++)
 		{
 			int c = i * j;
 			int d = i * (j + 1);
 
 			printf("%i", c);
-			if (j != 9)
+			if (j != (n - 1))
 			{
 				printf(",");
 				if ((c >= 0 && c <= 9) && (d >= 0 && d <= 9))
