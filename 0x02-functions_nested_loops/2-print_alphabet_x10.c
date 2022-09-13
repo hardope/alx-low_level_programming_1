@@ -2,7 +2,7 @@
 /**
  * print_alphabet - Prints aplhabets in lowercase
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int a;
 	int count;
@@ -16,7 +16,7 @@ void print_alphabet(void)
 			_putchar(a);
 			a++;
 		}
-		_putchar('\n')
+		_putchar('\n');
 		count++;
 	}
 }
