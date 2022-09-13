@@ -2,7 +2,7 @@
 /**
 *  _islower - Print
 * Return: 0 Success
-* @ c Description for c
+* @c Description for c
 */
 int _islower(int c)
 {
