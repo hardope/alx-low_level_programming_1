@@ -26,7 +26,7 @@ void print_times_table(int n)
 					printf("   ");
 				if ((c >= 10 && c <= 99) && (d >= 10 && d <= 99))
 					printf("  ");
-				else
+				if (c > 99)
 					printf(" ");
 			}
 		}
