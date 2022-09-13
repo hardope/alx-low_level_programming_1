@@ -1,12 +1,20 @@
-#include<stdio.h>
+#ifndef _MAIN_H_
+#define _MAIN_H_
 /**
- * print_alphabet - To print lowercase alphabets
+* _putchar - Display to std out
+* c: parameter to compare
+* Return: 1 or 0
+*/
+int _putchar(char c);
+/**
+ * int - a data type to specify the kind of value that is used in the function
+ * _putchar - the "_" before the putchar is used when declaring a fuction
+ * (char *c) - is the arguments passed
  */
-void print_alphabet(void)
-{
-	int i;
-	
-	for (i = 65; i < 123; i++)
-		putchar(i);
-	putchar('\n');
-}
+void print_alphabet(void);
+ /**
+ * void - used to return nothing
+ * _putchar - the "_" before the putchar is used when declaring a fuction
+ * for alphabets
+ */
+#endif
