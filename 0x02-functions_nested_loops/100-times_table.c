@@ -22,6 +22,8 @@ void print_times_table(int n)
 			if (j != (n - 1))
 			{
 				printf(",");
+				if ((c >= 0 && c <= 9) && (d >= 0 && d <= 9))
+					printf("   ");
 				if ((c >= 10 && c <= 99) && (d >= 10 && d <= 99))
 					printf("  ");
 				else
