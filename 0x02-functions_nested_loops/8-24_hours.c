@@ -9,20 +9,27 @@ void jack_bauer(void)
 	int k;
 	int l;
 
+	int count = 0;
 	for (i = 48; i < 51; i++)
 	{
-		for (j = 48; j < 52; j++)
+		for (j = 48; j < 57; j++)
 		{
+			if (count > 1300)
+			{
+				printf("Stop\n");
+				break;
+			}
 			for (k = 48; k < 54; k++)
 			{
 				for (l = 48; l < 58; l++)
 				{
-					_putchar(i);
-					_putchar(j);
-					_putchar(':');
-					_putchar(k);
-					_putchar(l);
-					_putchar('\n');
+					count++;
+					putchar(i);
+					putchar(j);
+					putchar(':');
+					putchar(k);
+					putchar(l);
+					putchar('\n');
 
 				}
 			}
