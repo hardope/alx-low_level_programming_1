@@ -1,27 +1,44 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-/* more headers goes there */
-/* Initial short description */
-/* betty style doc for function main goes there */
+#include <stdio.h>
+#include <unistd.h>
 /**
-* main - This is a description
-* Return: 0 if successful. 1 otherwise
-*/
+ * main - Entry point
+ * Description: prints all possible combination of 2-digit numbers
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	int n;
-	int m;
+	int a, b, c, d;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	for (a = 48; a <= 57; a++)
+	{
+		for (b = 48; b <= 57; b++)
+		{
+			for (c = 48; c <= 57; c++)
+			{
+				for (d = 48; d <= 57; d++)
+				{
+				if (((c + d) > (a + b) &&  c >= a) || a < c)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(' ');
+					putchar(c);
+					putchar(d);
 
-	m = n % 10;
-	if (m == 0)
-		printf("Last digit of %i is 0 and is 0\n", n);
-	if (m > 5)
-		printf("Last digit of %i is %i and is greater than 5\n", n, m);
-	if (m < 6 && m != 0)
-		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, m);
+					if (a + b + c + d == 227 && a == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+				}
+				}
+			}
+		}
+	}
+	putchar('\n');
 	return (0);
 }

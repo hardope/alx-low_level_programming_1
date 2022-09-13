@@ -1,27 +1,35 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-/* more headers goes there */
-/* Initial short description */
-/* betty style doc for function main goes there */
+#include <stdio.h>
+
 /**
-* main - This is a description
-* Return: 0 if successful. 1 otherwise
-*/
+ * main - Prints 3 combination of numbers
+ *
+ * Return: Always (Success)
+ */
 int main(void)
 {
-	int n;
-	int m;
+	int a, b, c;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	for (a = '0'; a <= '9'; a++)
+	{
+		for (b = '0'; b <= '9'; b++)
+		{
+			for (c = '0'; c <= '9'; c++)
+			{
+				if (a < b && b < c)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(c);
 
-	m = n % 10;
-	if (m == 0)
-		printf("Last digit of %i is 0 and is 0\n", n);
-	if (m > 5)
-		printf("Last digit of %i is %i and is greater than 5\n", n, m);
-	if (m < 6 && m != 0)
-		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, m);
+					if (a != '7')
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
+		}
+	}
+	putchar('\n');
 	return (0);
 }
