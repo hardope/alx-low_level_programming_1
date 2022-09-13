@@ -1,12 +1,32 @@
 #include "main.h"
+# include<stdio.h>
 /**
-*  _abs - Print
-* @a: Value of parameter
+*  print_to_98 - Print
+* @n: Value of parameter
 * Return: Values
 */
-int _abs(int a)
+void print_to_98(int n)
 {
-	if (a < 0)
-		a = a * (-1);
-	return (a);
+	int i;
+
+	if (n > 98)
+	{
+		for (i = n; i > 97; i--)
+		{
+			printf("%i", i);
+			if (i != 98)
+				printf(", ");
+		}
+		printf("\n");
+	}
+	else
+	{
+		for (i = n; i < 99; i++)
+		{
+			printf("%i", i);
+			if (i != 98)
+				printf(", ");
+		}
+		printf("\n");
+	}
 }
