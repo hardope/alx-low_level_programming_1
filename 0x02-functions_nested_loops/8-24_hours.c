@@ -1,24 +1,31 @@
 #include "main.h"
 /**
-*  print_sign - Print
-* @n: Value of parameter
-* Return: Values
+*  jack_bauer - Print
 */
-int print_sign(int n)
+void jack_bauer(void)
 {
-	if (n < 0)
+	int i;
+	int j;
+	int k;
+	int l;
+
+	for (i = 48; i < 51; i++)
 	{
-		_putchar('-');
-		return (-1);
-	}
-	else if (n == 0)
-	{
-		_putchar('0');
-		return (0);
-	}
-	else
-	{
-		_putchar('+');
-		return (1);
+		for (j = 48; j < 52; j++)
+		{
+			for (k = 48; k < 54; k++)
+			{
+				for (l = 48; l < 58; l++)
+				{
+					putchar(i);
+					putchar(j);
+					putchar(':');
+					putchar(k);
+					putchar(l);
+					putchar('\n');
+
+				}
+			}
+		}
 	}
 }
