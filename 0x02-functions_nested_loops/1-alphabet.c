@@ -5,6 +5,9 @@
 */
 int main(void)
 {
-	print_alphabet();
-	return (0);
+	int a;
+	
+	for (a = 65; a < 96; a++)
+		_putchar(a);
+	_putchar('/n');
 }
