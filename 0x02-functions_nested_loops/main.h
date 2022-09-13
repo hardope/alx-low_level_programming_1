@@ -29,4 +29,10 @@ int _islower(int c);
  * _putchar - the "_" before the putchar is used when declaring a fuction
  * for alphabets
  */
+int _isalpha(int c);
+ /**
+ * void - used to return nothing
+ * _putchar - the "_" before the putchar is used when declaring a fuction
+ * for alphabets
+ */
 #endif
