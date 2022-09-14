@@ -1,38 +1,30 @@
-#include "main.h"
+#include "stdio.h"
+
 /**
-*  jack_bauer - Print
-*/
-void jack_bauer(void)
+ * main - main block
+ * description - program that prints first 50 Fibonacci numbers
+ * Return: Always (success)
+ */
+int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
-
-	int count = 0;
-
-	for (i = 48; i < 58; i++)
-	{
-		for (j = 48; j < 58; j++)
-		{
-			if (count > 1390)
-			{
-				break;
-			}
-			for (k = 48; k < 54; k++)
-			{
-				for (l = 48; l < 58; l++)
-				{
-					count++;
-					_putchar(i);
-					_putchar(j);
-					_putchar(':');
-					_putchar(k);
-					_putchar(l);
-					_putchar('\n');
-
-				}
-			}
-		}
-	}
+int count = 2;
+long int i = 1, j = 2;
+long int k;
+printf("%lu, ", i);
+while (count <= 50)
+{
+if (count == 50)
+{
+printf("%lu\n", j);
+}
+else
+{
+printf("%lu, ", j);
+}
+k = j;
+j += i;
+i = k;
+count++;
+}
+return (0);
 }
