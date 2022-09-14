@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stdio.h>
 /**
  * main - sums integers in multiples of 3 or 5
  * description - obtaining multiples of integers
