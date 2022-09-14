@@ -7,29 +7,34 @@
 */
 void print_times_table(int n)
 {
-	int j;
-	int i;
-	n = n + 1;
-
-	for (i = 0; i < n; i++)
+	int a, b, op;
+	if (n >= 0 && n <= 15)
 	{
-		for (j = 0; j < n; j++)
+		for (a = 0; a <= n; a++)
 		{
-			int c = i * j;
-			int d = i * (j + 1);
-
-			printf("%i", c);
-			if (j != (n - 1))
+			_putchar(48);
+			for (b = 1; b <= n; b++)
 			{
-				printf(",");
-				if ((c >= 0 && c <= 9) && (d >= 0 && d <= 9))
-					printf("   ");
-				if ((c >= 10 && c <= 99) && (d >= 10 && d <= 99))
-					printf("  ");
-				if (c > 99)
-					printf(" ");
-			}
+				op = a * b;
+				_putchar(44);
+				_putchar(32);
+				if (op <= 9)
+			{
+			_putchar(32);
+			_putchar(32);
+			_putchar(op + 48);
 		}
-		printf("\n");
+	else if (op <= 99)
+	{
+		_putchar(32);
+		_putchar((op / 10) + 48);
+		_putchar((op % 10) + 48);
 	}
+	else
+	{
+		_putchar(((op / 100) % 10) + 48);
+		_putchar(((op / 10) % 10) + 48);
+		_putchar((op % 10) + 48);
+	}
+	_putchar('\n');
 }
