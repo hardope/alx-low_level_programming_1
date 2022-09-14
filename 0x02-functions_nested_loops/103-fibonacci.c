@@ -6,26 +6,21 @@
  */
 int main(void)
 {
-int counter = 2;
+int counter = 0;
+long int a = 1;
+long int b = a;
+long int c = a + b;
 
-float a = 1;
-float b = a + 1;
-float c = a + b;
-
-printf("%.0f, ", a);
-printf("%.0f, ", b);
-while (counter < 98)
+while (c < 4000000)
 {
-counter++;
-printf("%.0f", c);
+if (c % 2 == 0)
+{
+counter += c;
+}
 a = b;
 b = c;
 c = a + b;
-if (counter < 98)
-{
-printf(", ");
 }
-}
-printf("\n");
+printf("%d\n", counter);
 return (0);
 }
