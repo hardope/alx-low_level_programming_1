@@ -1,38 +1,26 @@
-#include "main.h"
+include <stdio.h>
 /**
-*  jack_bauer - Print
-*/
-void jack_bauer(void)
+ * main - main function
+ *
+ * Return: nothing
+ */
+int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int counter = 0;
+	long int a = 1;
+	long int b = a;
+	long int c = a + b;
 
-	int count = 0;
-
-	for (i = 48; i < 58; i++)
+	while (c < 4000000)
 	{
-		for (j = 48; j < 58; j++)
+		if (c % 2 == 0)
 		{
-			if (count > 1390)
-			{
-				break;
-			}
-			for (k = 48; k < 54; k++)
-			{
-				for (l = 48; l < 58; l++)
-				{
-					count++;
-					_putchar(i);
-					_putchar(j);
-					_putchar(':');
-					_putchar(k);
-					_putchar(l);
-					_putchar('\n');
-
-				}
-			}
+			counter += c;
 		}
+		a = b;
+		b = c;
+		c = a + b;
 	}
+	printf("%d\n", counter);
+	return (0);
 }
