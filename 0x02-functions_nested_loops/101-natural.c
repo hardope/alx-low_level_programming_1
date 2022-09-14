@@ -1,38 +1,27 @@
 #include "main.h"
 /**
-*  jack_bauer - Print
-*/
-void jack_bauer(void)
+ * main - sums integers in multiples of 3 or 5
+ * description - obtaining multiples of integers
+ * Return: Always (success)
+ */
+int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
-
-	int count = 0;
-
-	for (i = 48; i < 58; i++)
+	int start_num, end_num, total;
+	end_num = 1024;
+	total = 0;
+	for (start_num = 0; start_num < end_num; start_num++)
 	{
-		for (j = 48; j < 58; j++)
+		if ((start_num % 3 == 0) || (start_num % 5 == 0))
 		{
-			if (count > 1390)
-			{
-				break;
-			}
-			for (k = 48; k < 54; k++)
-			{
-				for (l = 48; l < 58; l++)
-				{
-					count++;
-					_putchar(i);
-					_putchar(j);
-					_putchar(':');
-					_putchar(k);
-					_putchar(l);
-					_putchar('\n');
-
-				}
-			}
+			total = total + start_num;
+		}
+		else
+		{
+			continue;
 		}
 	}
+	printf("%d", total);
+	printf("\n");
+	return (0);
 }
+
