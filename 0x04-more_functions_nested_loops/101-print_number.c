@@ -1,33 +1,46 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - main function
+ * print_number - prints number
  *
- *
- * Return: a number
+ * @n: integer to print to character
  */
-int main(void)
+void print_number(int n)
 {
 	int i;
+	int d = 1;
+	unsigned int x = n;
+	unsigned int y = n;
+	int c = 0;
 
-	for (i = 1; i <= 100; i++)
+	if (n == 0)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
-		{
-			if (i % 3 == 0)
-			{
-				printf("Fizz");
-			}
-			if (i % 5 == 0)
-			{
-				printf("Buzz");
-			}
-		} else
-		{
-			printf("%d", i);
-		}
-		if (i != 100)
-			printf(" ");
+		_putchar('0');
 	}
-	printf("\n");
-	return (0);
+	if (n < 0)
+	{
+		_putchar('-');
+		n = n + 1;
+		n = -n;
+		y = n;
+		x = n;
+		x += 1;
+		y += 1;
+	}
+
+	while (x != 0)
+	{
+		x = x / 10;
+		c++;
+	}
+	for (i = 1; i < c; i++)
+	{
+		d *= 10;
+	}
+	for (i = 0; i < c; i++)
+	{
+		_putchar(y / d + '0');
+		y = y % d;
+		d = d / 10;
+	}
 }
