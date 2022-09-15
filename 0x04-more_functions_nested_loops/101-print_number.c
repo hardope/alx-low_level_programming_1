@@ -44,3 +44,14 @@ void print_number(int n)
 		d = d / 10;
 	}
 }
+	for (i = 1; i < c; i++)
+	{
+		d *= 10;
+	}
+	for (i = 0; i < c; i++)
+	{
+		_putchar(y / d + '0');
+		y = y % d;
+		d = d / 10;
+	}
+}
