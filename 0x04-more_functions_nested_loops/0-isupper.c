@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-*  _isalpha - Print
+*  _isupper - Print
 * @c: Description for c
 * Return: 0. Success
 */
-int _isalpha(int c)
+int _isupper(int c)
 {
 	if ((c > 64 && c < 91)
 		return (1);
