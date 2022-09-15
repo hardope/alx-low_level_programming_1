@@ -1,8 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
-* main: Main function
-* Return: 0 success
-*/
+ * main - main function
+ *
+ *
+ * Return: a number
+ */
 int main(void)
 {
 	int i;
