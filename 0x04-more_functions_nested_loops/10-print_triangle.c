@@ -11,12 +11,12 @@ void print_triangle(int size)
 	{
 		for (j = 8; j > i; j--)
 		{
-			printf(" ");
+			_putchar(' ');
 		}
 		for (k = 0; k < i; k++)
 		{
-			printf("#");
+			printf('#');
 		}
-		printf("\n");
+		printf('\n');
 	}
 }
