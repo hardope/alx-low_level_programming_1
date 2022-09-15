@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*  _isalpha - Print
+*  _isupper - Print
 * @c: Description for c
 * Return: 0. Success
 */
