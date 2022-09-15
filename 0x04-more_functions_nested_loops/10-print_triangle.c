@@ -1,10 +1,22 @@
 #include "main.h"
 /**
-*  mul - Print
-* @a: Value of parameter
-* Return: Values
+*  print_triangle - Print
+* @size: Value of parameter
 */
-int mul(int a, int b)
+void print_triangle(int size)
 {
-        return (a * b);
+        int i, j, k;
+
+        for (i = 0; i < 8; i++)
+	{
+		for (j = 8; j > i; j--)
+		{
+			printf(" ");
+		}
+		for (k = 0; k < i; k++)
+		{
+			printf("#");
+		}
+		printf("\n");
+	}
 }
