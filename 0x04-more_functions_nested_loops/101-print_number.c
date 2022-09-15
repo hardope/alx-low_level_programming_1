@@ -43,7 +43,6 @@ void print_number(int n)
 		y = y % d;
 		d = d / 10;
 	}
-}
 	for (i = 1; i < c; i++)
 	{
 		d *= 10;
