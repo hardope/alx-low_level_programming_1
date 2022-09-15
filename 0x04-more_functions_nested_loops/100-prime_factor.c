@@ -1,33 +1,25 @@
 #include <stdio.h>
+
 /**
  * main - main function
  *
- *
- * Return: a number
+ * Return: returns 0
  */
 int main(void)
 {
-	int i;
+	unsigned int a = 2;
+	unsigned long n = 612852475143;
 
-	for (i = 1; i <= 100; i++)
+	while (a != n)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
+		if (n % a == 0)
 		{
-			if (i % 3 == 0)
-			{
-				printf("Fizz");
-			}
-			if (i % 5 == 0)
-			{
-				printf("Buzz");
-			}
+			n = n / a;
 		} else
 		{
-			printf("%d", i);
+			a++;
 		}
-		if (i != 100)
-			printf(" ");
 	}
-	printf("\n");
+	printf("%lu\n", n);
 	return (0);
 }
