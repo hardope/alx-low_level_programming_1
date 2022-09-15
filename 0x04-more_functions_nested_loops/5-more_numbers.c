@@ -12,12 +12,12 @@ for (i = 0; i < 15; i++)
 {
 if (i > 9)
 {
-putchar('1');
-putchar((i-10) + '0');
+_putchar('1');
+_putchar((i-10) + '0');
 }
 else
-putchar(i + '0');
+_putchar(i + '0');
 }
-putchar('\n');
+_putchar('\n');
 }
 }
