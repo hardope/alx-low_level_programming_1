@@ -7,7 +7,7 @@ void print_triangle(int size)
 {
         int i, j, k;
 
-        for (i = 0; i < 8; i++)
+        for (i = 0; i < size; i++)
 	{
 		for (j = 8; j > i; j--)
 		{
@@ -15,8 +15,8 @@ void print_triangle(int size)
 		}
 		for (k = 0; k < i; k++)
 		{
-			printf('#');
+			_putchar('#');
 		}
-		printf('\n');
+		_putchar('\n');
 	}
 }
