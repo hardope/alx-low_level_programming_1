@@ -1,5 +1,10 @@
-#include<stdio.h>
-int main(void)
+#include "main.h"
+/**
+*  mul - Print
+* @a: Value of parameter
+* Return: Values
+*/
+int mul(int a, int b)
 {
-	here
+        return (a * b);
 }
